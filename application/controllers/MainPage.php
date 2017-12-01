@@ -32,7 +32,7 @@ class MainPage extends CI_Controller {
 	
 	public function index()
 	{
-		
+		$this->smarty->displayFrame();
 	}
 	
 	public function game()

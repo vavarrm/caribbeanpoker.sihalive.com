@@ -20,12 +20,12 @@ class Mysmarty
 		$this->smarty->display($tpl);
 	}
 	
-	public function displayFrame($tpl)
+	public function displayFrame($tpl='')
 	{
 		$this->assign(array(
-			'content_tpl'	=>'front_end/block/'.$tpl
+			'content_tpl'	=>$tpl
 		));
-		$this->smarty->display('front_end/frame.tpl');
+		$this->smarty->display('component/frame.html');
 	}
 	
 	public function assign($var)
